@@ -1,0 +1,38 @@
+<!-- Here an example of a page using subtitle. Notice that the DOM must contain a page section and, of course, a video to make it work -->
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+	
+
+	 </head>
+    <body>
+     <h1> </h1>  
+<video id="video" ontimeupdate="update(this)" controls>
+
+       <source src="http://www.openbeelden.nl/files/92/104101.ed_hd.mp4" type="video/mp4">
+      <source src="http://www.openbeelden.nl/files/92/104105.ed_hd.webm" type="video/webm">
+      <track kind="captions" src="/videojs-transcript-master/captions/captions.en.vtt" srclang="en" label="English" default>
+      <track kind="captions" src="/videojs-transcript-master/captions/captions.sv.vtt" srclang="sv" label="Swedish">
+      <track kind="captions" src="/videojs-transcript-master/captions/captions.ru.vtt" srclang="ru" label="Russian">
+      <track kind="captions" src="/videojs-transcript-master/captions/captions.ja.vtt" srclang="ja" label="Japanese">
+      <track kind="captions" src="/videojs-transcript-master/captions/captions.ar.vtt" srclang="ar" label="Arabic">
+</video>
+<button class="ten">+10</button>
+<section id="page", style="
+  display: block;
+  margin: 0 auto;
+  text-align: center;  width: 350px;
+  height: 200px;
+  overflow-y: scroll;
+  scroll-behavior: smooth">
+
+</section>
+ 
+<script src="subttles.js"></script>
+
+    </body>
+</html>
+
+
